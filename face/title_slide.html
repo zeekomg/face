@@ -28,13 +28,13 @@
         font-family: 'Tajawal', sans-serif;
       }
       .title {
-        font-size: 72px;
+        font-size: 64px; /* تصغير حجم الخط قليلاً لإفساح المجال */
         font-weight: 700;
         color: #FFFFFF;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       }
       .subtitle {
-        font-size: 36px;
+        font-size: 32px; /* تصغير حجم الخط قليلاً */
         font-weight: 500;
         color: #FFFFFF;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -82,6 +82,34 @@
         height: 100%;
         z-index: 0;
       }
+      /* --- كود التنسيق الجديد --- */
+      .student-info {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        color: #FFFFFF;
+        text-align: center;
+      }
+      .student-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #10B981; /* استخدام اللون المميز */
+        margin-bottom: 10px;
+      }
+      .student-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* عرض الطلاب في عمودين */
+        gap: 10px 20px;
+      }
+      .student-info li {
+        font-size: 16px;
+      }
     </style>
   </head>
   <body>
@@ -93,14 +121,25 @@
       <img src="images/attendance_icon.png" alt="نظام الحضور" class="floating-icon icon3" width="80" height="80">
       <img src="images/computer_vision_icon.png" alt="الرؤية الحاسوبية" class="floating-icon icon4" width="80" height="80">
       
-      <div class="z-10 text-center mb-8">
-        <h1 class="title mb-6">آلية ذكية لتوثيق الحضور والانصراف</h1>
-        <h2 class="subtitle mb-4">بالاعتماد على تقنيات الذكاء الاصطناعي في التعرف على الوجوه</h2>
+      <div class="z-10 text-center mb-4">
+        <h1 class="title mb-4">آلية ذكية لتوثيق الحضور والانصراف</h1>
+        <h2 class="subtitle mb-3">بالاعتماد على تقنيات الذكاء الاصطناعي في التعرف على الوجوه</h2>
       </div>
       
-      <div class="university z-10 mt-16">
+      <div class="university z-10">
         <p class="text-center">جامعة أجدابيا - كلية تقنية المعلومات</p>
       </div>
+
+      <div class="student-info z-10">
+        <h3>إعداد الطلاب:</h3>
+        <ul>
+          <li>ابراهيم فرج محمد جمعة - 81910076</li>
+          <li>احمد سالم رمضان ادهیم - 82120136</li>
+          <li>عبد المالك هدية عبد الله يونس - 82120103</li>
+          <li>عبد الروؤف ادريس ديدح - 82120213</li>
+        </ul>
+      </div>
+
     </div>
 
     <script>
@@ -148,4 +187,3 @@
     </script>
   </body>
 </html>
-
